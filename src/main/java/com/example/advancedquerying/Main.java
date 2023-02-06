@@ -27,6 +27,7 @@ public class Main implements CommandLineRunner {
         List<Shampoo> shampoos = this.shampooService.findBySizeOrderById(Size.MEDIUM);
         for (Shampoo shampoo : shampoos) {
             System.out.println(shampoo);
+            System.out.println("--");
         }
     }
 }
